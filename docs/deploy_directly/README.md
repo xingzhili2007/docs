@@ -2,6 +2,8 @@
 
 `2.x` 与 `3.x` 的数据库表结构并不相同，需要进行数据迁移，详见：[数据迁移](migrate.md)
 
+朴素部署部分仅推荐对 Linux 比较了解的小伙伴的小伙伴进行尝试，不保证文档的绝对正确性
+
 **推荐使用 docker 以避免诸多问题**
 
 > Docker 部署请移步：[使用 docker 部署 PasteMe](deploy_docker.md)
