@@ -2,7 +2,7 @@
 
 * 产品文档
 
-    * [产品简介](/)
+    * [产品简介](/README.md "PasteMe Docs")
     * [使用文档](/documentation.md)
 
 * 部署指南
