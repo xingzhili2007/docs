@@ -2,7 +2,7 @@
 
 ## Migrate from 2.x to 3.x
 
-1. Download [db_transfer](https://github.com/PasteUs/PasteMeGoBackend/raw/build/db_transfer)
+1. Download `db_transfer.zip` from [release-v3.0.1](https://github.com/PasteUs/PasteMeGoBackend/releases/tag/release-v3.0.1)
 2. Execute the following command:
 
 ```bash
