@@ -6,7 +6,7 @@
 
 `GET` `api.pasteme.cn/:token` or `api.pasteme.cn/:token?json=true`
 
-> `GET` with `json=true` will only get content field instead.
+> `GET` without `json=true` will only get content field instead.
 
 + `token` is `100` with Paste ID **100**
 + `token` is `101,123456` with Paste ID **101** and Password **123456**

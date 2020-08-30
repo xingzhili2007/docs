@@ -1,39 +1,8 @@
 # 使用 Docker 部署 PasteMe
 
-若要使用 Nginx 和 systemd 部署请移步：[朴素部署](deploy_directly/)
+若要使用 Nginx 和 systemd 部署请移步：[朴素部署](deploy/directly/)
 
-## 环境准备
-
-### Linux 环境
-
-1. 安装必要的依赖
-
-    ```bash
-    sudo apt update && sudo apt install python3 vim python3-pip curl git -y
-    pip3 install docker-compose
-    ```
-
-2. 安装 Docker 
-
-    国内用户使用脚本一键安装: `sudo curl -sSL https://get.daocloud.io/docker | sh`  
-    国外用户使用脚本一键安装: `sudo curl -sSL get.docker.com | sh`
-    
-    详细步骤参照： [https://docs.docker.com/install/](https://docs.docker.com/install/)
-
-### Windows 环境
-
-
-Windows 下的安装仅供体验，勿在生产环境使用。如有必要，请使用虚拟机安装 Linux 并将 PasteMe 安装在其中。
-
-以下教程仅适用于 Win10 x64 下的 `PowerShell`
-
-1. 安装 Windows 的 Docker 工具
-2. 右击右下角 Docker 图标，选择 Settings 进行设置
-3. 选择 `Shared Drives` 菜单，之后勾选你想安装 PasteMe 的盘符位置（例如勾选D盘），点击 `Apply`
-4. 输入 Windows 的账号密码进行文件共享
-5. 安装 `Python`、`pip`、`git`、`docker-compose`，安装方法自行搜索
-
-## 开始安装
+## 部署
 
 1. 克隆 [github.com/PasteUs/PasteMeDeploy](https://github.com/PasteUs/PasteMeDeploy)，并进入克隆至本地的文件夹
 
@@ -42,14 +11,7 @@ Windows 下的安装仅供体验，勿在生产环境使用。如有必要，请
     cd pasteme
     ```
 
-2. 使用默认配置文件
-
-    ```bash
-    cp frontend/usr/config.example.json frontend/usr/config.json
-    cp backend/config/config.example.json backend/config/config.json
-    ```
-
-3. 启动服务
+2. 启动服务
 
     ```bash
     docker-compose up -d
