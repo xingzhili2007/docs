@@ -17,9 +17,29 @@
       loadSidebar: true,
       subMaxLevel: 2,
       coverpage: true,
-      onlyCover: true 
+      onlyCover: true,
+      auto2top: true,
+      nameLink: {
+        "/": "/#/README",
+        "/deploy/directly/": "/#/deploy/docker"
+      },
+      plugins: [
+        function(hook, vm) {
+          hook.beforeEach(function(html) {
+            var url = 'https://github.com/PasteUs/docs/blob/master/docs/' + vm.route.file;
+            var editHtml = '[📝 在 GitHub 上编辑此页](' + url + ')\n';
+
+            return (
+              html + '\n---\n' + editHtml
+            );
+          });
+        }
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-json.min.js"></script>
 </body>
 </html>
