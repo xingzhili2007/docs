@@ -6,9 +6,10 @@
 
 > 一个不算糟糕的分享平台
 
+- 设置密码、永久存储 or 阅后即焚
 - 代码高亮、Markdown 解析
-- 可加密、阅后即焚
 
+[PasteMe](https://pasteme.cn)
 [GitHub](https://github.com/LucienShui/PasteMe)
 [开始](README.md)
 
