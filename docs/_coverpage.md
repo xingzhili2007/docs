@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](https://cdn.jsdelivr.net/gh/PasteUs/CDN@master/screenshot/pasteme/duck.png ":size=128x128")
+![logo](https://cdn.jsdelivr.net/gh/PasteUs/CDN@master/screenshot/pasteme/duck.png ":size=128x128 :id=cover-logo")
 
 # PasteMe <small>3.2</small>
 
@@ -13,3 +13,4 @@
 [GitHub](https://github.com/LucienShui/PasteMe)
 [开始](README)
 
+![color](#FFFFFF)
